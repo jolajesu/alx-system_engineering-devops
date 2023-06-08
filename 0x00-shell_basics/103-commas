@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -printf "%f\n" | sort -fd | awk '{ORS = NR%2 ? "," : "\n"} 1'
+ls -pma

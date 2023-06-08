@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | sort -df | awk '{printf "%s,", $0} END {if (NR) printf "\b\n"}'
+find . -maxdepth 1 -printf "%f\n" | sort -fd | awk '{ORS = NR%2 ? "," : "\n"} 1'

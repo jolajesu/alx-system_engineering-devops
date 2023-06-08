@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | sort -df | awk '{printf "%s,",$0} END {print ""}'
+ls -ap1 | sort -df | awk '{printf "%s,", $0} END {if (NR) printf "\b\n"}'

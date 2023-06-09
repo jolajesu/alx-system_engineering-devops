@@ -1,2 +1,2 @@
 #!/bin/bash
-nano school.magic
+file -C -m school.mgc school.magic
